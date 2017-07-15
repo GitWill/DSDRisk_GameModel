@@ -104,5 +104,89 @@
 
         </item>
 
+        <item>
+            <date>2017/07/14</date>
+            <day>Fri</day>
+
+            <time>03:53 AM</time>
+
+            <pred>6.21</pred>
+
+            <highlow>H</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/14</date>
+            <day>Fri</day>
+
+            <time>10:28 AM</time>
+
+            <pred>-0.15</pred>
+
+            <highlow>L</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/14</date>
+            <day>Fri</day>
+
+            <time>05:09 PM</time>
+
+            <pred>6.49</pred>
+
+            <highlow>H</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/14</date>
+            <day>Fri</day>
+
+            <time>11:08 PM</time>
+
+            <pred>1.98</pred>
+
+            <highlow>L</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/15</date>
+            <day>Sat</day>
+
+            <time>04:48 AM</time>
+
+            <pred>5.78</pred>
+
+            <highlow>H</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/15</date>
+            <day>Sat</day>
+
+            <time>11:10 AM</time>
+
+            <pred>0.34</pred>
+
+            <highlow>L</highlow>
+
+        </item>
+
+        <item>
+            <date>2017/07/15</date>
+            <day>Sat</day>
+
+            <time>05:51 PM</time>
+
+            <pred>6.67</pred>
+
+            <highlow>H</highlow>
+
+        </item>
+
     </data>
 </datainfo>

@@ -13,31 +13,26 @@ import android.util.Log;
  */
 
 public class FileIO {
-    private final String FILENAME = "tides.xml";
-    private Context context = null;
+    private final String FILENAME = "tides.xml";            //get reference to input file name
+    private Context context = null;                         //get reference for context to be set
 
     public FileIO(Context context){ this.context = context; }  //constructor is passed a context which it assigns to local object
 
     public TideItems readFile(){
         try {
-            // get the XML reader
-            SAXParserFactory factory = SAXParserFactory.newInstance();
-            SAXParser parser = factory.newSAXParser();
-            XMLReader xmlreader = parser.getXMLReader();
+            SAXParserFactory factory = SAXParserFactory.newInstance();  //get a reference to a SAXParserFactory obj
+            SAXParser parser = factory.newSAXParser();                  //get a reference to a SAXParser
+            XMLReader xmlreader = parser.getXMLReader();                //get the parsers XML reader
 
-            // set content handler
-            ParseHandler handler = new ParseHandler();
-            xmlreader.setContentHandler(handler);
+            ParseHandler handler = new ParseHandler();                  //create a ParseHandler for the XMLReader
+            xmlreader.setContentHandler(handler);                       //assign the handler to the reader
 
-            // read the file from internal storage
-            InputStream in = context.getAssets().open(FILENAME);
+            InputStream inFIle = context.getAssets().open(FILENAME);        //get reference to the input file
 
-            // parse the data
-            InputSource is = new InputSource(in);
-            xmlreader.parse(is);
+            InputSource inputSrc = new InputSource(inFIle);
+            xmlreader.parse(inputSrc);                                      //parse the XML file
 
-            // set the feed in the activity
-            TideItems items = handler.getItems();
+            TideItems items = handler.getItems();                           //get the parsed items
             return items;
         }
         catch (Exception e) {

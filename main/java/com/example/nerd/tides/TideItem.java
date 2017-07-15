@@ -9,44 +9,43 @@ import java.text.ParseException;
  */
 
 public class TideItem {
-    private String date = null;
-    private String day = null;
+    private String date = null;         //TideItem instance vars
+    private String day = null;          //used to store information about a single item
     private String time = null;
     private String pred = null;
     private String hiLo = null;
-    private String myStrToRename = null;
+    private String tideInfo = null;
+    private String dateInfo = null;
 
 
-    //this is the format used in the tide XML file
-    private SimpleDateFormat dateInFormat =
-            new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss");
-
-    // This is the format we want in our output
-    private SimpleDateFormat dateOutFormat =
-            new SimpleDateFormat("EEEE', ' MMM d");
-
-    public String getTideDateTimeFormatted() {
-        try {
-            Date myDate = dateInFormat.parse(date.trim());
-            String forecastDateFormatted = dateOutFormat.format(myDate);
-            return forecastDateFormatted;
-        }
-        catch (ParseException e) {
-            throw new RuntimeException(e);
-        }
+    //class accessors
+    public String getTideDateTimeFormatted() {      //format the date and day for the listview (top item)
+        dateInfo = date + "   " + day;
+        return dateInfo;
     }
 
-    public String getTideInfo(){
-        myStrToRename = hiLo;
-        return myStrToRename;
-/*
-        2016/01/01 Tuesday
-        High: 02:44 PM
-        2016/01/01 Tuesday
-        Low: 09:33 PM
-*/
+    public String getTideInfo(){                    //format the tide info for the listview (bottom item)
+        if(hiLo.equals("H"))
+            tideInfo = "High:   " + time;
+        else
+            tideInfo = "Low: " + time;
+        return tideInfo;
     }
 
+    public String getPred(){
+        return pred;
+    }
+
+    public String getMetric(){                      //convert to metric, 1 foot = .3048
+        double standard = Double.parseDouble(pred);
+        double metric = (standard * 30.48);
+        int metRounded = (int) metric;
+        String met = Integer.toString(metRounded) + " cm";
+        return met;
+    }
+
+
+    //class mutators
     public void setDate(String dateIn){ date = dateIn; }
 
     public void setDay(String dayIn){ day = dayIn; }
