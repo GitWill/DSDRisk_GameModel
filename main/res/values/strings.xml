@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Tidessssss</string>
+    <string name="app_name">Tides_V2</string>
+
+    <string-array name="locations_array">
+        <item>Eugene</item>
+        <item>Florence</item>
+        <item>Anchorage</item>
+    </string-array>
+
+    <string-array name="dates_array">
+        <item>Yesterday</item>
+        <item>Today</item>
+        <item>Tomorrow</item>
+    </string-array>
+
+
 </resources>

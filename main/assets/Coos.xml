@@ -1,0 +1,128 @@
+
+	<datainfo>
+		<origin>NOAA/NOS/CO-OPS</origin>
+		<disclaimer>
+		Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables.
+		</disclaimer>
+	<datarange>Daily</datarange>
+		<producttype>Tide Prediction</producttype>
+		<stationname>Coos Bay</stationname>
+		<state>OR</state>
+		<stationid>9432845</stationid>
+	
+		<stationtype>Subordinate</stationtype>
+		<referencedToStationName>Charleston</referencedToStationName>
+		<referencedToStationId>9432780</referencedToStationId>
+		<HeightOffsetLow>* 0.88</HeightOffsetLow>
+		<HeightOffsetHigh>* 0.96</HeightOffsetHigh>
+		<TimeOffsetLow>88</TimeOffsetLow>
+		<TimeOffsetHigh>86</TimeOffsetHigh>
+		
+		<BeginDate>20170715 00:22</BeginDate>
+		<EndDate>20170716 19:59</EndDate>
+		
+		<dataUnits>Feet</dataUnits>
+		 
+	<Timezone>LST_LDT</Timezone>
+	<Datum>MLLW</Datum>
+	<IntervalType>High/Low</IntervalType>
+	<data>
+	
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>12:22 AM</time>
+			
+				<pred>1.85</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>06:04 AM</time>
+			
+				<pred>5.65</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>12:25 PM</time>
+			
+				<pred>0.35</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>07:12 PM</time>
+			
+				<pred>6.53</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>01:25 AM</time>
+			
+				<pred>1.56</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>07:10 AM</time>
+			
+				<pred>5.20</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>01:13 PM</time>
+			
+				<pred>0.86</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>07:59 PM</time>
+			
+				<pred>6.76</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+		</data>
+</datainfo>

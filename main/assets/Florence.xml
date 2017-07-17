@@ -1,0 +1,116 @@
+
+	<datainfo>
+		<origin>NOAA/NOS/CO-OPS</origin>
+		<disclaimer>
+		Disclaimer: These data are based upon the latest information available as of the date of your request, and may differ from the published tide tables.
+		</disclaimer>
+	<datarange>Daily</datarange>
+		<producttype>Tide Prediction</producttype>
+		<stationname>Florence</stationname>
+		<state>OR</state>
+		<stationid>9434032</stationid>
+	
+		<stationtype>Subordinate</stationtype>
+		<referencedToStationName>Charleston</referencedToStationName>
+		<referencedToStationId>9432780</referencedToStationId>
+		<HeightOffsetLow>* 0.8</HeightOffsetLow>
+		<HeightOffsetHigh>* 0.86</HeightOffsetHigh>
+		<TimeOffsetLow>58</TimeOffsetLow>
+		<TimeOffsetHigh>44</TimeOffsetHigh>
+		
+		<BeginDate>20170715 05:22</BeginDate>
+		<EndDate>20170716 19:17</EndDate>
+		
+		<dataUnits>Feet</dataUnits>
+		 
+	<Timezone>LST_LDT</Timezone>
+	<Datum>MLLW</Datum>
+	<IntervalType>High/Low</IntervalType>
+	<data>
+	
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>05:22 AM</time>
+			
+				<pred>5.06</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>11:55 AM</time>
+			
+				<pred>0.32</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/15</date>
+				<day>Sat</day>
+		
+				<time>06:30 PM</time>
+			
+				<pred>5.85</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>12:55 AM</time>
+			
+				<pred>1.42</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>06:28 AM</time>
+			
+				<pred>4.66</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>12:43 PM</time>
+			
+				<pred>0.78</pred>
+			
+			<highlow>L</highlow>
+			
+			</item>
+		
+			<item>
+				<date>2017/07/16</date>
+				<day>Sun</day>
+		
+				<time>07:17 PM</time>
+			
+				<pred>6.06</pred>
+			
+			<highlow>H</highlow>
+			
+			</item>
+		
+		</data>
+</datainfo>
