@@ -1,17 +1,12 @@
 package com.example.nerd.midtownmma;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -37,15 +32,10 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     private RadioGroup radioGroup;
     private Intent intent;
     private int buttonID;
-    private String cost;
     MainActivity mainActivity;
 
     public void setButtonID(int buttonIDIn){
         buttonID = buttonIDIn;
-    }
-
-    public void setCost(String costIn){
-        cost = costIn;
     }
 
     @Override
@@ -64,27 +54,6 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         logoButton.setOnClickListener(this);  // this class implements the listener
         boothButton.setOnClickListener(this);  // this class implements the listener
 
-/*
-
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener(){
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch(checkedId){
-                    case R.id.winterButton:
-                        winterClicked();
-                        break;
-                    case R.id.springButton:
-                        springClicked();
-                        break;
-                    case R.id.summerButton:
-                        summerClicked();
-                        break;
-                    case R.id.fallButton:
-                        fallClicked();
-                        break;                }
-            }
-        });
-*/
 
         //Log.d(WILLS, "in onActivityCreated in first frag");
 
@@ -131,82 +100,40 @@ public class MainFragment extends Fragment implements View.OnClickListener {
         }
     }
 
-
-/*
-    public void winterClicked(){
-
-    }
-    public void springClicked(){  //mainEventPriceTextView.setText();
-    }
-    public void summerClicked(){  }
-    public void fallClicked(){  }
-    */
-
     public void saveIntentStartActivity(){
         intent = new Intent(getActivity(), SecondActivity.class);
         intent.putExtra("buttonID", buttonID);  // send state to 2nd activity
-        intent.putExtra("cost", cost);  // send state to 2nd activity
         startActivity(intent);
     }
 
     @Override
     public void onClick(View v) {
         buttonID = v.getId();
-        cost = mainEventPriceTextView.getText().toString();
-
         if(buttonID == R.id.mainButton){                       //if the user clickes the new game button
             if(twoPaneLayout){                                  //and it's a big screen
-                mainActivity.setSecondFrag(buttonID, mainEventPriceTextView.getText().toString());
+                mainActivity.setSecondFrag(buttonID);
             }else{
                 saveIntentStartActivity();
             }
         }else if(buttonID == R.id.coMainButton){
             if(twoPaneLayout){                                  //and it's a big screen
-                mainActivity.setSecondFrag(buttonID, mainEventPriceTextView.getText().toString());
+                mainActivity.setSecondFrag(buttonID);
             }else{
                 saveIntentStartActivity();
             }
         }else if(buttonID == R.id.logoButton){
             if(twoPaneLayout){                                  //and it's a big screen
-                mainActivity.setSecondFrag(buttonID, mainEventPriceTextView.getText().toString());
+                mainActivity.setSecondFrag(buttonID);
             }else{
                 saveIntentStartActivity();
             }
         }else if(buttonID == R.id.boothButton){
             if(twoPaneLayout){                                  //and it's a big screen
-                mainActivity.setSecondFrag(buttonID, mainEventPriceTextView.getText().toString());
+                mainActivity.setSecondFrag(buttonID);
             }else{
                 saveIntentStartActivity();
             }
         }
     }
-    /*public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-
-        boolean checked = ((RadioButton) view).isChecked();
-
-        switch(view.getId()) {
-            case R.id.winterButton:
-                if (checked)
-                    //MainFragment.winterClicked();
-                    //Toast.makeText(this, "winter", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.springButton:
-                if (checked)
-                    //MainFragment.springClicked();
-                    //Toast.makeText(this, "spring", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.summerButton:
-                if (checked)
-                    //MainFragment.summerClicked();
-                    //Toast.makeText(this, "summer", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.fallButton:
-                if (checked)
-                    //MainFragment.fallClicked();
-                    //Toast.makeText(this, "fall", Toast.LENGTH_SHORT).show();
-                break;
-        }
-    }*/
 }
 
